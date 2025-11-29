@@ -10,24 +10,111 @@
 </head>
 
 <body>
-<form action="/submit" method="POST">
-<input type="text" placeholder="Enter name">
-<input type="email" placeholder="Enter email">
-<input type="password" placeholder="Enter password">
-<input type="number" min="1" max="10">
-<input type="radio" name="gender" value="male"> Male
-<input type="radio" name="gender" value="female"> Female
-<input type="checkbox" name="hobby" value="music"> Music
-<input type="checkbox" name="hobby" value="travel"> Travel
-<select name="city">
-    <option>Delhi</option>
-    <option>Mumbai</option>
-    <option>Bangalore</option>
-</select>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Cake Recipe</title>
+</head>
+<body>
 
+    <!-- Header / Navigation -->
+    <header>
+        <h1>Chocolate Cake Recipe</h1>
+        <nav>
+            <a href="#ingredients">Ingredients</a>
+            <a href="#steps">Steps</a>
+            <a href="#tips">Tips</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <!-- inputs go here --> 
-</form>
+    <!-- Ingredients Section -->
+    <section id="ingredients">
+        <h2>Ingredients</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Flour</td>
+                    <td>2 cups</td>
+                </tr>
+                <tr>
+                    <td>Sugar</td>
+                    <td>1.5 cups</td>
+                </tr>
+                <tr>
+                    <td>Cocoa Powder</td>
+                    <td>0.5 cup</td>
+                </tr>
+                <tr>
+                    <td>Eggs</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Steps Section -->
+    <section id="steps">
+        <h2>Steps</h2>
+        <ol>
+            <li>Preheat oven to 350°F (175°C).</li>
+            <li>Mix dry ingredients together in a bowl.</li>
+            <li>Add eggs and milk, mix until smooth.</li>
+            <li>Pour into greased pan and bake for 30-35 mins.</li>
+        </ol>
+        <figure>
+            <img src="cake.jpg" alt="Chocolate Cake" width="400">
+            <figcaption>Freshly baked chocolate cake</figcaption>
+        </figure>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips">
+        <h2>Extra Tips</h2>
+        <details>
+            <summary>How to make it extra moist?</summary>
+            Add 1/4 cup of yogurt or sour cream to the batter.
+        </details>
+        <details>
+            <summary>Chocolate frosting idea</summary>
+            Mix cocoa powder, powdered sugar, and butter for a quick frosting.
+        </details>
+        <progress value="30" max="60">30 mins</progress> <!-- shows baking time progress -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name - Recipe Website</p>
+    </footer>
+
+</body>
+</html>
+
 
 
 </body>
